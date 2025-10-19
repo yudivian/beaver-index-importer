@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "beaver-index-importer"
-version = "0.1.0"
+version = "0.1.2"
 description = "A CLI tool to import siglip2 image  index files (.jsonl, .pkl) into a BeaverDB."
 readme = "README.md"
 requires-python = ">=3.13"
