@@ -1,0 +1,7 @@
+index_file: image_index.jsonl
+
+db_file: images.db
+
+collection: siglib2-images
+
+mode: upsert

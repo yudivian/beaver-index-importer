@@ -1,0 +1,138 @@
+# # # # # # # # # # # # # # # # # # # # # #
+# Archivos y directorios específicos de Python
+# # # # # # # # # # # # # # # # # # # # # #
+
+# Entornos virtuales
+# Mantenlos fuera de tu repositorio para evitar conflictos
+# y mantener el proyecto ligero.
+/venv/
+/env/
+/.venv/
+/ENV/
+/virtualenv/
+/shame/
+/.direnv/
+/python-virtualenv/
+/pyenv-virtualenv/
+
+# Archivos de caché de Python
+# Estos se generan automáticamente y no son necesarios.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de distribución y empaquetado
+# Generados al construir paquetes de Python.
+/build/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/.eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+/share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Archivos de instaladores de paquetes
+pip-wheel-metadata/
+/share/python-wheels/
+*.manifest
+*.spec
+
+# Caché de PyInstaller
+# Usado si empaquetas tu aplicación en un ejecutable.
+/pyinstaller/
+
+# Caché y logs de pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# # # # # # # # # # # # # # # # # # #
+# Herramientas y Frameworks comunes
+# # # # # # # # # # # # # # # # # # #
+
+# Django
+*.log
+local_settings.py
+/db.sqlite3
+/db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+/docs/_build/
+
+# PyBuilder
+/target/
+
+# # # # # # # # # # # # # # #
+# Ficheros de herramientas de desarrollo
+# # # # # # # # # # # # # # #
+
+# Caché de pytest
+.pytest_cache/
+.tox/
+.nox/
+/coverage/
+.coverage
+.coverage.*
+/htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Salida de linters y formateadores
+.pyre/
+.pytype/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# # # # # # # # # # # # # #
+# Ficheros del editor/IDE
+# # # # # # # # # # # # # #
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+# Ignora los checkpoints que se crean automáticamente.
+.ipynb_checkpoints
+
+# # # # # # # # # # # # # #
+# Otros
+# # # # # # # # # # # # # #
+
+# Ficheros de entorno
+# Contienen claves de API, contraseñas y otra información sensible.
+# ¡Nunca los subas a un repositorio público!
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

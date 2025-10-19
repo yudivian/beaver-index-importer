@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "beaver-index-importer"
+version = "0.1.0"
+description = "A CLI tool to import siglip2 image  index files (.jsonl, .pkl) into a BeaverDB."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Yudivián Almeida Cruz", email = "yudivian@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "beaver-db[full]",
+    "tqdm>=4.60.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+beaver-index-importer = "index_importer.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/index_importer"]
+
+[project.urls]
+Homepage = "https://github.com/yudivian/beaver-index-importer"
+Issues = "https://github.com/yudivian/beaver-index-importer/issues"
